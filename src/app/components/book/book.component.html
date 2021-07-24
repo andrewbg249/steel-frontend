@@ -1,0 +1,24 @@
+<div class="container">
+    <app-spinner *ngIf="loading"></app-spinner>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="title">Nombres</th>
+                <th scope="year">Apellidos</th>
+                <th scope="genre">Dirección</th>
+                <th scope="pages">Fecha de Nacimiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <button class="btn btn-primary" routerLink="/save-book">Add Book</button>
+</div>

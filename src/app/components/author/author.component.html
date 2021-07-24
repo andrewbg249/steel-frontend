@@ -1,0 +1,26 @@
+<div class="container">
+    <app-spinner *ngIf="loading"></app-spinner>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="firstName">First Name</th>
+                <th scope="lastName">Last Name</th>
+                <th scope="dateBirth">Date Birth</th>
+                <th scope="cityBirth">City Birth</th>
+                <th scope="email">Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let author of listAuthors | ObjToArray">
+                <td>{{ author.firstName }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <button class="btn btn-primary" routerLink="/save-author">Add Author</button>
+</div>
